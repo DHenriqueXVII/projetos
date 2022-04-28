@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --standard-font: 'Montserrat', sans-serif;
+
+    --color-01: #fcfafa;
+    --color-02: #737272;
+    --color-03: #4d4c4c;
+    --color-04: #262626;
+}
+
+* {margin: 0; padding: 0;}
+
+body {font-family: var(--standard-font); background-color: var(--color-01);}
+
+header {
+    position: fixed;
+    background-color: var(--color-01);
+    width: 97%;
+    margin-top: -100px;
+    padding: 10px 20px;
+}
+
+#logo {
+    color: var(--color-03);
+    display: inline-block;
+    margin-right: 10%;
+}
+
+nav {display: inline-block;}
+
+#menu > li {display: inline-block; margin-right: 20px;}
+
+#menu > li > a {
+    font-weight: bold;
+    color: var(--color-02);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#menu > li:hover:first-child {border-bottom: solid 2px var(--color-03);}
+
+#menu > li:hover > a {color: var(--color-03);}
+
+#menu > li:hover:not(:first-child) > a {padding-bottom: 20px;}
+
+#menu > li:hover .dropdown {display: block; margin-top: 20px;}
+
+.dropdown {
+    display: none;
+    position: fixed;
+    background-image: linear-gradient(to top, #f7f7f7, #fcfafa);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.200);
+
+    list-style-type: none;
+    line-height: 2.2em;
+}
+
+.dropdown a {
+    font-weight: 500;
+    color: var(--color-03);
+    text-decoration: none;
+}
+
+.dropdown li:hover a {font-weight: bold;}
+
+#apps {width: 159px;}
+
+#games {width: 90px;}
+
+#movies {width: 168px;}
+
+#books {width: 197px;}
+
+#register {float: right;}
+
+#register li {display: inline-block; margin-top: 14px;}
+
+#register li:first-child {border-right: solid 2px var(--color-02);}
+
+#register li a {
+    font-weight: bold;
+    color: var(--color-02);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#register li:hover a {color: var(--color-03);}
+
+#register li a:first-child {margin-right: 4px;}
+
+main {
+    background-image: linear-gradient(to top, #f7f7f7, #fcfafa);
+    border-radius: 10px;
+    max-width: 880px;
+    margin: auto;
+    padding-left: 50px;
+}
+
+#social-networks {
+    position: fixed;
+    float: left;
+    background-image: linear-gradient(to top, #f7f7f7, #fcfafa);
+    margin-top: 20px;
+    margin-left: -40px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.200);
+}
+
+#social-networks a {display: block;}
+
+#social-networks a:not(:last-child) {margin-bottom: 5px;}
+
+#social-networks img {width: 26px; transition-duration: 0.5s;}
+
+#social-networks a:hover img {
+    filter: brightness(.65);
+    border-radius: 26px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.200);
+}
+
+article {
+    background-image: linear-gradient(to top, #f7f7f7, #fcfafa);
+    max-width: 880px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {font-size: 2em; color: var(--color-03);}
+
+h2 {font-size: 1.8em; color: var(--color-03);}
+
+p {
+    font-weight: 500;
+    color: var(--color-03);
+    line-height: 1.8em;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#details {height: 150px;}
+
+#game-cover {float: left; border-radius: 10px;}
+
+#more-details {float: left; margin-left: 20px;}
+
+#more-details p:nth-child(4) {
+    font-weight: 600;
+    color: var(--color-03);
+    margin-top: 20px;
+}
+
+#more-details a {
+    font-weight: 600;
+    color: var(--color-02);
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+#more-details a:hover {color: var(--color-03); text-decoration: underline;}
+
+#content-rating {
+    float: left;
+    width: 24px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+#download {float: right; margin-top: 80px;}
+
+#download a {
+    font-weight: 600;
+    color: var(--color-01);
+    text-decoration: none;
+    background-color: var(--color-03);
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+#categorie-genre {
+    font-weight: 600;
+    float: right;
+    margin-top: -10px;
+    margin-right: -120px;
+}
+
+#categorie-genre a {
+    font-weight: 600;
+    color: var(--color-02);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#categorie-genre a:hover {color: var(--color-03); text-decoration: underline;}
+
+video {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#screenshots {margin-top: 40px;}
+
+#screenshots img {
+    width: 31%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#screenshots img:nth-child(3) {margin: 0 2.85%;}
+
+#about-this-game {
+    background-color: #f0f0f0;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+details {margin-top: 20px;}
+
+summary {font-weight: 600; color: var(--color-03);}
+
+#other-information {
+    background-color: #ebebeb;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#other-information li {list-style-type: none;}
+
+#other-information h3 {color: var(--color-03); margin-top: 10px;}
+
+#other-information p {font-weight: 600; margin-top: 10px;}
+
+#other-information a {
+    font-weight: 600;
+    color: var(--color-02);
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    transition-duration: 0.5s;
+}
+
+#other-information a:hover {color: var(--color-03); text-decoration: underline;}
+
+#similar-games {
+    margin-top: 40px;
+}
+
+.games {
+    display: inline-block;
+    background-color: #f0f0f0;
+    width: 180px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.games:not(:last-child) {margin-right: 4%;}
+
+.games a {text-decoration: none;}
+
+.games img {width: 100%; border-radius: 10px 10px 0 0;}
+
+.games h1 {font-size: 1.5em; padding: 15px;}
+
+footer {
+    background-color: #f0f0f0;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+#about-us {width: 300px;}
